@@ -153,6 +153,22 @@
       background-color:none;
       border: 1px solid grey;
       border-radius:20%;
+    }
+    
+    .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* This is the aspect ratio 16:9 (9/16 * 100 = 56.25) */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
   </style>
 </head>
@@ -286,8 +302,11 @@ With my educational background, technical expertise, and a passion for both deve
             <li> T-shirt, Cap, pillowcase, bed sheet designing </li>
             <li> Logo designing, webpage designing and development </li>  </p></td></p></tr><tr><td colspan="2"><p style=" line-height: 1.5">
               I post my design samples both on <a href="https://m.facebook.com/ifargandesigns"> Facebook </a> and <a href="https://t.me/ifargandesigns"> Telegram</a> to attract a customers. Anyone can take a tour via a given link. Also I upload some designing ways on my youtube channel. You can search on my youtube channel for more.
-              <iframe width="90%" height="315" src="https://www.youtube.com/embed/uf_2-UbSaA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </p> </td>
+             <div class="video-container">
+  <iframe width="90%" height="315" src="https://www.youtube.com/embed/uf_2-UbSaA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div> 
+          
+  </p> </td>
       </tr>
     </tbody>
   </table>
