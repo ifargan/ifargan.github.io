@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alemu Gudeta</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10;
+      padding: 0;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .header img {
+      width: 100%;
+      max-width: 100%;
+      max-height: ;
+    }
+    
+    .tabs {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      background-color: #ddd;
+    }
+    
+    .tab {
+      background-color: #f1f1f1;
+      color: #555;
+      cursor: pointer;
+      padding: 20px 40px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+    .tab:hover {
+      background-color: #ddd;
+    }
+    
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      columns: 2;
+      column-gap: 20px;
+    }
+    
+    .tab-content p {
+      margin-top: 0;
+    }
+    
+    /* Show the selected tab content */
+    .active {
+      display: block;
+    }
+    
+    .footer {
+      position: sticky;
+      width: auto;
+      bottom: 0;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #ccc;
+      background-color: teal;
+      padding:20px;
+    }
+
+
+.column {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .column {
+    flex-basis: 10%;
+    margin-right: 20px;
+  }
+  
+  .column:last-child {
+    flex-basis: 70%;
+    margin-right: 0;
+  }
+}
+
+
+.pic{
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+
+.brand{
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  margin-left: 1%;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border: none;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+.bb{
+  background-color: teal;
+  border: none;
+  font-size: 16px;
+  color: orange;
+  float:right;
+  margin-right:2%;
+}
+.bb:hover{
+  cursor: pointer;
+  color:yellow;
+}
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="C:\Users\W10X64_PLUS-OFFICE\Desktop/Brand.jpg" alt="Full-width Image">
+  </div>
+
+  <div class="tabs">
+    <button class="tab" onclick="openTab('home')">Home</button>
+    <button class="tab" onclick="openTab('mybrands')">My Brands</button>
+    <button class="tab" onclick="openTab('contact')">Contact Me</button>
+  </div>
+
+  <div id="home" class="tab-content active">
+
+  
+  <div class="column">
+    <br><br><br><img class="pic" src="images/me.jpg"> <br><br><br><br><br><br><br><br>
+  </div>
+  
+  <div class="column">
+    <center> <h3 style="color:teal;"> ALEMU GUDETA ETICHA </h3> </center><hr>
+    
+    <div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Languages</b></td>
+        <td>Afaan Oromoo, Amharic and English</td>
+      </tr>
+      
+      <tr>
+        <td><b>Education</b></td>
+        <td>BSC Degree in Computer Science, @HRU<br>
+          MSc Degree in Data Science, @ASTU
+</td>
+      </tr>
+      <tr>
+        <td><b>Skills</b></td>
+        <td>Full Stack Development <br> 
+          HTML  |  CSS   | Bootstrap  |  JavaScript   |  Ajax   | MySQL</td>
+        </tr>
+
+        
+<tr>
+        <td><b>Frameworks</b></td>
+        <td>
+          Django  |  Laravel   | Angular  </td>
+        </tr>
+
+        <tr>
+        <td><b>Graphics Design</b></td>
+        <td>
+          Adobe Photoshop   |  Adobe illustrator  </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<p style=" line-height: 1.5">
+
+As a full stack developer with a background in computer science and a master's degree in data science, I am a well-versed in various programming languages and technologies. With expertise in front-end development using HTML, CSS, Bootstrap, JavaScript, and Ajax, I craft visually appealing and interactive websites. In addition, he possesses strong database skills with MySQL for efficient back-end development.<br><br>
+
+While I am a beginner in frameworks like Django, Angular, and Laravel, his foundation in full stack development enables me to quickly adapt and learn new technologies. Beyond my programming skills, I am also a talented graphic designer proficient in Adobe Photoshop and Adobe Illustrator, allowing me to create captivating visual designs.<br><br>
+
+With my educational background, technical expertise, and a passion for both development and design, I bring a well-rounded skill set to deliver innovative and user-friendly solutions.
+</p>
+
+
+  </div>
+
+
+  </div>  
+  <div id="mybrands" class="tab-content">
+    <div class="column">
+    <table class="table">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>    <img class="brand" src="images/IFARGANTECH.jpg"> 
+        </td>
+        <td><b style="color:teal;"> Ifargan Tech </b><hr>
+          <p style=" line-height: 1.5"> I like creating a youtube content.Sometimes technological contents, artistic and linguistic matters another time. Also I like making a poem video using my own voice. <br><br> You can get my youtube channel on <a href="https://www.youtube.com/c/ifargantech"> Ifargan Tech</a>.Here is a poem video I uploaded on my channel. I like this poem a lot. Not only that, there are a numbers of my poem videos. Take a tour. </p> <br><br></td></tr><tr>
+          <td colspan="2"> <iframe width="560" height="315" src="https://www.youtube.com/embed/hFTjet2ChnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </td>
+      </tr>
+      <tr>
+        <td colspan="2"> <p style=" line-height: 1.5">Also I like creating and uploading fun and enetertainment things. Not to make a money but to create my own satisfaction. Through this, it can also be understood that I try making a videos using different video making apps. Not this much professional,but for its simplicity I like using <a href="https://shotcut.org/"> ShotCut </a>. You can try!</p></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="column">
+    <table class="table">
+    <tbody>
+      <tr>
+        <td>    <img class="brand" src="images/ifargandesigns.jpg"> 
+</td>
+        <td><b style="color:teal;"> Ifargan Designs </b><hr>
+          <p style=" line-height: 1.5"> I like a graphic design. They entertain me. Also I am adapted in grabbing money from working some graphics design tasks.
+          <ul> My tasks includes: </ul>
+            <li> Book cover designing </li>
+            <li> Banner, poster, flyer, business card designing </li>
+            <li> T-shirt, Cap, pillowcase, bed sheet designing </li>
+            <li> Logo designing, webpage designing and development </li>  </p></td></p></tr><tr><td colspan="2"><p style=" line-height: 1.5">
+              I post my design samples both on <a href="https://m.facebook.com/ifargandesigns"> Facebook </a> and <a href="https://t.me/ifargandesigns"> Telegram</a> to attract a customers. Anyone can take a tour via a given link. Also I uload some designing ways on my youtube channel. You can search on my youtube channel for more.
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uf_2-UbSaA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </p> </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+  
+  <div id="contact" class="tab-content">
+    <div class="column" style="margin-left: 10%;">
+      <table class="table">
+    <tbody>
+      <tr>
+        <td>
+    <p style=" line-height: 1.5"> I am highly sociable person. I count every chance to contact with peoples to work on business and social life. I appreciate those who are interested in working with me. <br><br>   <b style="color:teal"> Why you contect me? </b><br> You might contact me to work on a project together or to give me some task to complete for you like web app development or graphics design.</p>
+  </td>
+</tr>
+</tbody>
+</table>
+    </div>
+
+    <div class="column" style="margin-right: 10%;">
+      <table class="table">
+    <tbody>
+      <tr>
+        <td> <b> Phone </b>  </td>
+        <td> 0919778608 </td>
+      </tr>
+      <tr>
+        <td> <b> Email </b>  </td>
+        <td> ifargangudeta@gmail.com </td>
+      </tr>
+      <tr>
+        <td> <b> Social medias </b>  </td>
+        <td> 
+          <li> <a href="https://m.facebook/igudeta">Facebook </a> 
+            <li> <a href="https://t.me/ifargan">Telegram </a>
+              <li> <a href="https://www.linkedin.com/in/alemu-gudeta-212a16155/">Linkidn </a>
+                <li> <a href="https://www.instagram.com/alexisgudeta/">Instagram </a>
+                  <li> <a href="https://github.com/ifargan">Github </a>
+
+        </td>
+      </tr>
+</tbody>
+</table>
+    </div>
+
+  </div>
+  
+  <script>
+    // JavaScript function to handle tab switching
+    function openTab(tabName) {
+      // Hide all tab contents
+      var tabContents = document.getElementsByClassName("tab-content");
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+      }
+      
+      // Show the selected tab content
+      var selectedTab = document.getElementById(tabName);
+      selectedTab.style.display = "block";
+    }
+    
+    // Set the initial active tab
+    openTab('home');
+  </script>
+</body>
+<div class="footer">&copy; 2023 Alemu Gudeta Eticha.
+    <button class="bb" onclick="openTab('home')">Home</button>
+    <button class="bb" onclick="openTab('mybrands')">My Brands</button>
+    <button class="bb" onclick="openTab('contact')">Contact Me</button>
+    </div>
+</html>
